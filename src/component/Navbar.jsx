@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,13 +51,13 @@ const Navbar = () => {
           </a>
         </div>
         <div className="hidden md:block">
-          <ul className="flex space-x-4 font-bold">
+          <ul className="flex space-x-6 font-bold">
             <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
               <ScrollLink
                 to="home"
                 smooth={true}
                 duration={500}
-                className="hover:text-gray-300 cursor-pointer"
+                className="hover:text-gray-300 cursor-pointer "
               >
                 Home
               </ScrollLink>
@@ -95,10 +97,10 @@ const Navbar = () => {
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
-            className="focus:outline-none"
+            className="focus:outline-none flex items-center"
             aria-label="Toggle menu"
           >
-            Menu
+            <FontAwesomeIcon icon={faBars} className="text-3xl" />
           </button>
         </div>
       </div>

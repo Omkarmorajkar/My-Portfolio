@@ -40,7 +40,7 @@ const Project = () => {
   return (
     <div className=" mx-auto px-4 py-8 bg-gradient-to-br from-blue-300 to-blue-100">
       <div
-        className="bg-white  rounded-2xl overflow-hidden backdrop-blur-sm backdrop-filter bg-opacity-50 lg:mx-16 p-6"
+        className="bg-white  rounded-2xl overflow-hidden backdrop-blur-sm backdrop-filter bg-opacity-50 lg:mx-16 p-6 shadow-lg "
         id="projects"
       >
         <div className="container  md:mx-auto sm:mx-auto  ">
