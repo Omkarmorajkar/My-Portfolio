@@ -1,12 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import myImage from "../Image/myImage.jpg";
-import Navbar from "./Navbar";
 import { useInView } from "react-intersection-observer";
 
 function Home() {
   const { ref, inView } = useInView({
-    threshold: 0.5, // Trigger when 50% of the component is visible
+    threshold: 1, // Trigger when 50% of the component is visible
   });
 
   const h1Variants = {
@@ -15,7 +14,7 @@ function Home() {
   };
 
   const pVariants = {
-    hidden: { opacity: 0, x: 200 },
+    hidden: { opacity: 0, x: -200 },
     visible: { opacity: 1, x: 0, transition: { duration: 1 } },
   };
 
@@ -36,15 +35,15 @@ function Home() {
       style={gradientBackground}
       id="home"
     >
-      <div className="max-w-4xl text-center" ref={ref}>
+      <div className="max-w-7xl text-center" ref={ref}>
         <motion.div
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           variants={slideInFromTop} // Change to slide in from top animation
-          className="mx-auto w-44 h-44 mb-6 rounded-full overflow-hidden border-4 border-white"
+          className="neumorphism mx-auto w-44 h-44 mb-6 rounded-full overflow-hidden border-4 border-white"
         >
           <img
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover "
             src={myImage}
             alt="Person Image"
           />
@@ -53,7 +52,7 @@ function Home() {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           variants={h1Variants}
-          className="text-4xl md:text-6xl font-bold mb-4"
+          className="text-4xl md:text-6xl font-bold mb-4 "
           style={{ color: accentColor }}
         >
           Hi, I'm <span className="text-yellow-300">Omkar Morajkar </span>
