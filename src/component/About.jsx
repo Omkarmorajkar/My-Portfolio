@@ -22,7 +22,7 @@ const lineAnimation = {
 
 const About = () => {
   const { ref, inView } = useInView({
-    threshold: 0.8, // Trigger when 50% of the component is visible
+    threshold: 0.5, // Trigger when 50% of the component is visible
   });
 
   return (
@@ -34,7 +34,7 @@ const About = () => {
       id="about"
       ref={ref}
     >
-      <div className="flex justify-center items-center ">
+      <div className="container mx-auto px-4 py-8  ">
         <SkillsContainer skills={skills} inView={inView} />
       </div>
       <div className="container mx-auto px-4 py-8">
@@ -87,7 +87,7 @@ const SkillsContainer = ({ skills, inView }) => {
   };
 
   return (
-    <div className="bg-white  backdrop-blur-sm backdrop-filter bg-opacity-50 p-6 w-[90%]  rounded-md ">
+    <div className="bg-white  backdrop-blur-sm backdrop-filter bg-opacity-50 lg:mx-16 p-6 rounded-xl ">
       <motion.h2 className="text-3xl font-bold mb-4" variants={fadeInUp}>
         My Skills
       </motion.h2>
