@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 
 const Contact = () => {
   const { ref, inView } = useInView({
-    threshold: 0.8, // Trigger when 50% of the component is visible
+    threshold: 0.5, // Trigger when 50% of the component is visible
   });
 
   const fadeInUp = {

@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import myImage from "../Image/myImage.jpg";
 import { useInView } from "react-intersection-observer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function Home() {
   const { ref, inView } = useInView({
@@ -27,6 +29,23 @@ function Home() {
   const slideInFromTop = {
     hidden: { opacity: 0, y: -100 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }, // Adjust the duration here (e.g., 0.5 seconds)
+  };
+
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById("projects");
+
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    console.log("Hello world");
+  };
+
+  const openGitHubProfile = () => {
+    window.open("https://github.com/Omkarmorajkar", "_blank");
+  };
+
+  const openLinkedInProfile = () => {
+    window.open("https://www.linkedin.com/in/omkar-morajkar/", "_blank");
   };
 
   return (
@@ -67,11 +86,26 @@ function Home() {
           A Front-End Developer passionate about crafting user-centric and
           visually stunning web experiences.
         </motion.p>
+        <div className="flex justify-center items-center m-6">
+          <motion.div
+            className="text-3xl mx-2 cursor-pointer"
+            onClick={openGitHubProfile}
+          >
+            <FontAwesomeIcon icon={faGithub} style={{ color: accentColor }} />
+          </motion.div>
+          <motion.div
+            className="text-3xl mx-2 cursor-pointer"
+            onClick={openLinkedInProfile}
+          >
+            <FontAwesomeIcon icon={faLinkedin} style={{ color: accentColor }} />
+          </motion.div>
+        </div>
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           className="bg-white text-blue-500 font-bold py-3 px-6 rounded-full transition duration-300 hover:bg-blue-100 focus:outline-none"
           style={{ backgroundColor: accentColor, color: "#667eea" }} // Button colors
+          onClick={scrollToProjects}
         >
           View Projects
         </motion.button>
