@@ -34,10 +34,10 @@ const About = () => {
       id="about"
       ref={ref}
     >
-      <div className="container mx-auto px-4 py-8  ">
+      <div className=" mx-auto px-4 py-8  ">
         <SkillsContainer skills={skills} inView={inView} />
       </div>
-      <div className="container mx-auto px-4 py-8">
+      <div className=" mx-auto px-4 py-8">
         <div className=" bg-white rounded-lg overflow-hidden backdrop-blur-sm backdrop-filter bg-opacity-50 lg:mx-16 shadow-lg ">
           <motion.div
             className="p-6"

@@ -105,7 +105,7 @@ const ProjectCard = ({ title, description, imageUrl, projectUrl }) => {
           href={projectUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 rounded-lg opacity-0 hover:opacity-100 transition duration-300"
+          className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-blue-300 bg-opacity-50 rounded-lg opacity-0 hover:opacity-100 transition duration-300"
         >
           <span className="text-white text-lg font-bold">View Project</span>
         </a>
