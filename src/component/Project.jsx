@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import pro1Image from "../../public/Image/project1.png";
+import project3 from "../../public/Image/project3.png";
 
 const projects = [
   {
@@ -17,6 +18,12 @@ const projects = [
       "Developed a web app using HTML, JavaScript, and Tailwind CSS to simplify course and program outcome assessment.",
     imageUrl: pro1Image,
     projectUrl: "https://co-po-calculation.netlify.app/", // Replace with your project URL
+  },
+  {
+    title: "Redux-Ecommerce-web-app",
+    description: "Developed a web app using React, Redux and Tailwind CSS .",
+    imageUrl: project3,
+    projectUrl: "https://redux-ecommerce-web-app.netlify.app", // Replace with your project URL
   },
   // Add more projects with similar structure
 ];
