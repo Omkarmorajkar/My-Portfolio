@@ -1,11 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import ReactLogo from "../Image/reactlogo.svg";
-import javascriptIcon from "../Image/javascriptIcon.png";
-import HtmlLogo from "../Image/htmlLogo.png";
-import CssLogo from "../Image/CSSLogo.png";
-import TailwindIcon from "../Image/tailwindIcon.png";
+// import ReactLogo from "../Image/reactlogo.svg";
+// import javascriptIcon from "../Image/javascriptIcon.png";
+// import HtmlLogo from "../Image/htmlLogo.png";
+// import CssLogo from "../Image/CSSLogo.png";
+// import TailwindIcon from "../Image/tailwindIcon.png";
+
+import ReactLogo from "../../public/Image/reactlogo.svg";
+import javascriptIcon from "../../public/Image/javascriptIcon.png";
+import HtmlLogo from "../../public/Image/htmlLogo.png";
+import CssLogo from "../../public/Image/CSSLogo.png";
+import TailwindIcon from "../../public/Image/tailwindIcon.png";
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"];
 
@@ -34,10 +40,10 @@ const About = () => {
       id="about"
       ref={ref}
     >
-      <div className="container mx-auto px-4 py-8  ">
+      <div className=" mx-auto px-4 py-8  ">
         <SkillsContainer skills={skills} inView={inView} />
       </div>
-      <div className="container mx-auto px-4 py-8">
+      <div className=" mx-auto px-4 py-8">
         <div className=" bg-white rounded-lg overflow-hidden backdrop-blur-sm backdrop-filter bg-opacity-50 lg:mx-16 shadow-lg ">
           <motion.div
             className="p-6"
