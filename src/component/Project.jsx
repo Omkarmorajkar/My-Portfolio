@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import pro1Image from "../Image/project1.png";
+import pro1Image from "../../public/Image/project1.png";
 
 const projects = [
   {

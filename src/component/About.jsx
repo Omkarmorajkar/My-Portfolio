@@ -1,11 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import ReactLogo from "../Image/reactlogo.svg";
-import javascriptIcon from "../Image/javascriptIcon.png";
-import HtmlLogo from "../Image/htmlLogo.png";
-import CssLogo from "../Image/CSSLogo.png";
-import TailwindIcon from "../Image/tailwindIcon.png";
+// import ReactLogo from "../Image/reactlogo.svg";
+// import javascriptIcon from "../Image/javascriptIcon.png";
+// import HtmlLogo from "../Image/htmlLogo.png";
+// import CssLogo from "../Image/CSSLogo.png";
+// import TailwindIcon from "../Image/tailwindIcon.png";
+
+import ReactLogo from "../../public/Image/reactlogo.svg";
+import javascriptIcon from "../../public/Image/javascriptIcon.png";
+import HtmlLogo from "../../public/Image/htmlLogo.png";
+import CssLogo from "../../public/Image/CSSLogo.png";
+import TailwindIcon from "../../public/Image/tailwindIcon.png";
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"];
 

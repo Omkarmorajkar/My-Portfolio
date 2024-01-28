@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import myImage from "../Image/myImage.jpg";
+import myImage from "../../public/Image/myImage.JPG";
 import { useInView } from "react-intersection-observer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
